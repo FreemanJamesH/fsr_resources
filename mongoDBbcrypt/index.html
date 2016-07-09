@@ -10,11 +10,18 @@
   <script src="https://code.angularjs.org/1.5.7/angular-animate.min.js"></script>
   <script src="./module.js"></script>
   <script src="./controller.js"></script>
+  <script src="./services.js"></script>
 </head>
 
 <body ng-controller="mainController">
   <h1>Hello</h1>
-  <h2>{{text}}</h2>
+  <h2>Username: {{username}}</h2>
+  <h2>Password: {{password}}</h2>
+  <form ng-submit="submit()">
+    <input type="text" ng-model="username" placeholder="username">
+    <input type="text" ng-model="password" placeholder="password">
+    <input type="submit" value="Submit">
+  </form>
 </body>
 
 </html>
